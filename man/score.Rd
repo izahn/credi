@@ -2,14 +2,19 @@
 % Please edit documentation in R/score.R
 \name{score}
 \alias{score}
-\title{Score CREDI data}
+\title{Score CREDI response data}
 \usage{
-score()
+score(reverse_code = TRUE, log_file = "logfile.txt")
+}
+\arguments{
+\item{reverse_code}{(Logical) Defaults to TRUE. If TRUE, then reverse coding is automated to appropriately handle the negatively worded items LF9, LF102, LFMH1, LFMH2, LFMH3, LFMH4, LFMH5, LFMH7, LFMH8, & LFMH9. If FALSE, then no reverse coding is applied.}
+
+\item{log_file}{(Character) Defaults to "logfile.txt". Name a *.txt log file providing more details on missing data, error messages, & other information.}
 }
 \description{
-Score CREDI data and save results as a .csv file.
+This calculates the posterior density function.
 }
 \examples{
-score()
+score()      
 }
 \keyword{CREDI}
